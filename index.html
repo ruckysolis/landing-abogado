@@ -111,5 +111,23 @@
             </div>
         </div>
     </footer>
+    <script>
+    // Seleccionar el botón de hamburguesa y el menú
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    // Alternar la clase "active" en el menú cuando se hace clic en el botón
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Cerrar el menú cuando se hace clic en un enlace
+    const navLinks = document.querySelectorAll('.nav-menu ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
