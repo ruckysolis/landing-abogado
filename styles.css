@@ -149,6 +149,16 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
+.ubicacion {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.ubicacion h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
     background-color: #2c3e50;
