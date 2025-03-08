@@ -13,25 +13,27 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <h1>Bufete de Abogados</h1>
-            <!-- Botón de hamburguesa -->
+    <div class="container">
+        <h1>Bufete de Abogados</h1>
+        <!-- Botón de hamburguesa -->
         <button class="menu-toggle" aria-label="Abrir menú">
             <i class="fas fa-bars"></i>
         </button>
-            <nav>
-                <ul>
-                    <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li><a href="#servicios"><i class="fas fa-balance-scale"></i> Servicios</a></li>
-                    <li><a href="#nosotros"><i class="fas fa-users"></i> Nosotros</a></li>
-                    <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
-                    <li><a href="#ubicacion"><i class="fas fa-envelope"></i> Ubicación</a></li>
-                    <li><a href="https://ruckysolis.substack.com/"><i class="fas fa-blog"></i> Blog</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        <!-- Menú de navegación con la clase "nav-menu" -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#servicios"><i class="fas fa-balance-scale"></i> Servicios</a></li>
+                <li><a href="#nosotros"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="#ubicacion"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+                <li><a href="https://ruckysolis.substack.com/"><i class="fas fa-blog"></i> Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
+    
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="container">
@@ -128,6 +130,6 @@
             navMenu.classList.remove('active');
         });
     });
-</script>
+    </script>
 </body>
 </html>
