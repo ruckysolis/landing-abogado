@@ -71,8 +71,8 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
+    background-color: #f4f4f4;
+    color: #333;
     padding: 100px 0;
     text-align: center;
 }
@@ -90,7 +90,7 @@ nav ul li a {
 /* Servicios Section */
 .servicios {
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: #fff;
 }
 
 .servicios h2 {
@@ -105,7 +105,7 @@ nav ul li a {
 }
 
 .servicio {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -120,6 +120,7 @@ nav ul li a {
 .nosotros {
     padding: 60px 0;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
 .nosotros p {
@@ -130,32 +131,22 @@ nav ul li a {
 /* Contacto Section */
 .contacto {
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: #fff;
+    text-align: center;
 }
 
 .contacto h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.form-group {
     margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+.contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-group textarea {
-    resize: vertical;
+.contacto ul li {
+    margin-bottom: 10px;
 }
 
 /* Footer */
