@@ -33,14 +33,14 @@
                 </div>
                 <a href="#" class="text-xl font-bold text-blue-800">Abogado Ricardo Solís</a>
             </div>
-            <nav class="hidden md:flex space-x-8">
+            <nav id="mobile-menu" class="hidden md:flex space-x-8">
                 <a href="#inicio" class="text-blue-800 hover:text-blue-600 font-medium">Inicio</a>
                 <a href="#servicios" class="text-gray-700 hover:text-blue-600 font-medium">Servicios</a>
                 <a href="#equipo" class="text-gray-700 hover:text-blue-600 font-medium">Equipo</a>
                 <a href="#contacto" class="text-gray-700 hover:text-blue-600 font-medium">Contacto</a>
                 <a href="https://ruckysolis.substack.com" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium">Blog</a>
             </nav>
-            <button class="md:hidden text-blue-800">
+            <button id="menu-toggle" class="md:hidden text-blue-800">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
@@ -322,7 +322,24 @@
     </a>
 
     <script>
-        // Mobile menu toggle functionality would go here
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+    
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenu.classList.toggle('flex-col');
+                mobileMenu.classList.toggle('absolute');
+                mobileMenu.classList.toggle('bg-white');
+                mobileMenu.classList.toggle('w-full');
+                mobileMenu.classList.toggle('top-full');
+                mobileMenu.classList.toggle('left-0');
+                mobileMenu.classList.toggle('shadow-md');
+                mobileMenu.classList.toggle('space-y-4');
+                mobileMenu.classList.toggle('p-4');
+            });
+        });
     </script>
 </body>
 </html>
