@@ -40,18 +40,6 @@
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
-
-
-        <!-- Menú móvil -->
-        <div id="mobileMenu" class="mobile-menu bg-white md:hidden">
-            <div class="container mx-auto px-4 py-2 space-y-4">
-                <a href="#inicio" class="block py-2 text-blue-800 border-b border-gray-100">Inicio</a>
-                <a href="#servicios" class="block py-2 text-gray-700 border-b border-gray-100">Servicios</a>
-                <a href="#equipo" class="block py-2 text-gray-700 border-b border-gray-100">Equipo</a>
-                <a href="#contacto" class="block py-2 text-gray-700 border-b border-gray-100">Contacto</a>
-                <a href="https://ruckysolis.substack.com" target="_blank" class="block py-2 text-gray-700">Blog</a>
-            </div>
-        </div>
     </header>
 
     <!-- Hero Section -->
@@ -330,42 +318,7 @@
     </a>
 
     <script>
-        // Menu móvil toggle
-        const mobileMenuButton = document.getElementById('mobileMenuButton');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuIcon = document.getElementById('menuIcon');
-        
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('open');
-            
-            // Cambiar ícono
-            if (mobileMenu.classList.contains('open')) {
-                menuIcon.classList.remove('fa-bars');
-                menuIcon.classList.add('fa-times');
-            } else {
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
-            }
-        });
-        
-        // Cerrar menú al hacer clic en un enlace
-        const menuLinks = document.querySelectorAll('#mobileMenu a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.remove('open');
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
-            });
-        });
-        
-        // Cerrar menú al cambiar a pantalla grande
-        window.addEventListener('resize', function() {
-            if (window.innerWidth >= 768) {
-                mobileMenu.classList.remove('open');
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
-            }
-        });
+        // Mobile menu toggle functionality would go here
     </script>
 </body>
 </html>
