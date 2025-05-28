@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abogado Ricardo Solís | Servicios Legales en Nuevo Laredo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .team-member:hover img {
+            transform: scale(1.05);
+        }
+
+        .h-64 {
+    height: 32rem;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-blue-700 text-white p-2 rounded mr-3">
+                    <i class="fas fa-balance-scale text-xl"></i>
+                </div>
+                <a href="#" class="text-xl font-bold text-blue-800">Abogado Ricardo Solís</a>
+            </div>
+            <nav id="mobile-menu" class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-blue-800 hover:text-blue-600 font-medium">Inicio</a>
+                <a href="#servicios" class="text-gray-700 hover:text-blue-600 font-medium">Servicios</a>
+                <a href="#equipo" class="text-gray-700 hover:text-blue-600 font-medium">Equipo</a>
+                <a href="#contacto" class="text-gray-700 hover:text-blue-600 font-medium">Contacto</a>
+                <a href="https://ruckysolis.substack.com" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium">Blog</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-blue-800">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Representación Legal en Nuevo Laredo</h1>
+                <p class="text-xl mb-8">Servicios jurídicos profesionales con atención personalizada y compromiso con mis clientes.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto" class="bg-white text-blue-800 font-bold py-3 px-6 rounded-lg text-center hover:bg-gray-100 transition">Agenda una cita</a>
+                    <a href="tel:8672666566" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-white hover:text-blue-800 transition">
+                        <i class="fas fa-phone mr-2"></i> 867 266 6566
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Abogado Ricardo Solís" class="rounded-lg shadow-2xl max-w-md w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-4">Servicios Legales</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Asesoría jurídica especializada para proteger tus derechos e intereses</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-gavel text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Asesoría Penal</h3>
+                    <p class="text-gray-600">Defensa en procesos penales y representación ante autoridades judiciales.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-home text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Derecho Familiar</h3>
+                    <p class="text-gray-600">Divorcios, pensión alimenticia, custodia y otros asuntos de familia.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-file-contract text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Contratos y Documentos</h3>
+                    <p class="text-gray-600">Elaboración y revisión de contratos, testamentos y documentos legales.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-briefcase text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Asuntos Laborales</h3>
+                    <p class="text-gray-600">Despido injustificado, liquidaciones y demandas laborales.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-landmark text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Trámites Legales</h3>
+                    <p class="text-gray-600">Asesoría en procedimientos administrativos y ante dependencias.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-handshake text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Asesoría Comercial</h3>
+                    <p class="text-gray-600">Constitución de negocios y solución de conflictos mercantiles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipo" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-4">Nuestro Equipo</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Profesionales comprometidos con ofrecer el mejor servicio legal</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Ricardo Solís -->
+                <div class="team-member bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="images/rucky.png" alt="Ricardo Solís Solís" class="w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Lic. Ricardo Solís Solís</h3>
+                        <p class="text-blue-700 mb-4">Abogado</p>
+                        <p class="text-gray-600 mb-4">También conocido como Rucky Solís. Apasionado del derecho y la justicia, con una trayectoria marcada por el compromiso, la estrategia y el enfoque en soluciones innovadoras para cada cliente.</p>
+                        <div class="flex space-x-4">
+                            <a href="https://ruckysolis.substack.com" target="_blank" class="text-blue-700 hover:text-blue-900">
+                                <i class="fab fa-blogger-b"></i>
+                            </a>
+                            <a href="mailto:solisrld@gmail.com" class="text-blue-700 hover:text-blue-900">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vernalda Tavera -->
+                <div class="team-member bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Vernalda Tavera Casarez" class="w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Lic. Vernalda Tavera Casarez</h3>
+                        <p class="text-blue-700 mb-4">Abogada</p>
+                        <p class="text-gray-600 mb-4">Profesional comprometida con la excelencia y la ética, enfocada en ofrecer soluciones efectivas y personalizadas. Su trayectoria refleja dedicación, conocimiento y un firme compromiso con quienes confían en su trabajo.</p>
+                    </div>
+                </div>
+                
+                <!-- Francisco Rodriguez -->
+                <div class="team-member bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Francisco Javier Rodriguez Ayala" class="w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Lic. Francisco Javier Rodriguez Ayala</h3>
+                        <p class="text-blue-700 mb-4">Abogado</p>
+                        <p class="text-gray-600 mb-4">Se distingue por su enfoque meticuloso y su habilidad para encontrar soluciones prácticas ante cualquier desafío. Su experiencia y dedicación lo convierten en un profesional confiable y eficaz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-8">Cómo Contactarme</h2>
+            
+            <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Información de Contacto</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-blue-700 mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Dirección</h4>
+                                    <p class="text-gray-600">Diaz Ordaz 2655 Esq. Tamaulipas<br>Nuevo Laredo, Tamaulipas</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-700 mr-4 mt-1">
+                                    <i class="fas fa-phone-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Teléfono</h4>
+                                    <p class="text-gray-600">867 266 6566</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-700 mr-4 mt-1">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Correo electrónico</h4>
+                                    <p class="text-gray-600">solisrld@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-700 mr-4 mt-1">
+                                    <i class="fas fa-clock text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Horario</h4>
+                                    <p class="text-gray-600">Lunes a Viernes: 9:00 am - 6:00 pm<br>Sábados: 10:00 am - 2:00 pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Redes Sociales</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="https://ruckysolis.substack.com" target="_blank" class="bg-blue-700 text-white p-4 rounded-lg flex items-center justify-center hover:bg-blue-800 transition">
+                                <i class="fab fa-blogger-b text-2xl mr-2"></i>
+                                <span>Blog Legal</span>
+                            </a>
+                            <a href="tel:8672666566" class="bg-green-600 text-white p-4 rounded-lg flex items-center justify-center hover:bg-green-700 transition">
+                                <i class="fab fa-whatsapp text-2xl mr-2"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="mailto:solisrld@gmail.com" class="bg-red-600 text-white p-4 rounded-lg flex items-center justify-center hover:bg-red-700 transition">
+                                <i class="fas fa-envelope text-2xl mr-2"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="https://www.facebook.com/ruckysoliss" class="bg-blue-600 text-white p-4 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f text-2xl mr-2"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="font-bold text-gray-800 mb-2">Visítanos</h4>
+                            <p class="text-gray-600 mb-4">Agenda una cita presencial en nuestro despacho.</p>
+                            <a href="tel:8672666566" class="inline-block bg-blue-700 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-800 transition">
+                                <i class="fas fa-phone mr-2"></i> Llamar ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3539.798721513372!2d-99.53968692446753!3d27.47552497631628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDI4JzMxLjkiTiA5OcKwMzInMTMuNiJX!5e0!3m2!1ses-419!2smx!4v1741460124291!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Abogado Ricardo Solís</h3>
+                    <p class="mb-4">Servicios jurídicos profesionales en Nuevo Laredo con atención personalizada.</p>
+                    <p>© 2025 Todos los derechos reservados.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Enlaces</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="hover:text-blue-300 transition">Inicio</a></li>
+                        <li><a href="#servicios" class="hover:text-blue-300 transition">Servicios</a></li>
+                        <li><a href="#equipo" class="hover:text-blue-300 transition">Equipo</a></li>
+                        <li><a href="#contacto" class="hover:text-blue-300 transition">Contacto</a></li>
+                        <li><a href="https://ruckysolis.substack.com" target="_blank" class="hover:text-blue-300 transition">Blog Legal</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-2 mt-1"></i>
+                            <span>Diaz Ordaz 2655, Nuevo Laredo</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>867 266 6566</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>solisrld@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/528672666566" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+    
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenu.classList.toggle('flex-col');
+                mobileMenu.classList.toggle('absolute');
+                mobileMenu.classList.toggle('bg-white');
+                mobileMenu.classList.toggle('w-full');
+                mobileMenu.classList.toggle('top-full');
+                mobileMenu.classList.toggle('left-0');
+                mobileMenu.classList.toggle('shadow-md');
+                mobileMenu.classList.toggle('space-y-4');
+                mobileMenu.classList.toggle('p-4');
+            });
+        });
+    </script>
+</body>
+</html>
